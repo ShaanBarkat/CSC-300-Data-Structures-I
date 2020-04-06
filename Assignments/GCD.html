@@ -1,0 +1,76 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  body {font-family: Calibri, Georgia; font-size: 11pt; }
+  h1, h2, h3 {font-family: Cambria, Arial, Helvetica; font-weight: lighter; }
+  h1 {font-size: 26pt; }
+  h2 {font-size: 14pt; }
+  h3 {font-size: 12pt; }
+  h1 {color: #88b04b}
+  h2, h3 {color: #BA4653}
+  code {font-family: Courier New; font-weight: bold; color:  darkblue }
+  table {border-radius: 5px; border: 2px solid black; }
+  td, th {border: 1px solid gray; }
+  ul.innerlist {list-style: none; margin: 0; padding: 0}
+  </style>
+</head>
+
+<body>
+<div id="content">
+<h1>CSC 300/Data Structures in Java I<br />Assignment: Compute the GCD of two integers</h1>
+<h2>10 points</h2>
+<hr />
+<h2>Setting up</h2>
+<p>
+First, please read the section "Assignments and grading" in the <a href="Syllabus.html">syllabus</a>.  Then, following the steps for <a href="Creating programs.html">creating programs</a>, create a package called <code>gcd</code>.
+</p>
+<h2>Specifications</h2>
+<p>
+Using the <code>LotteryOdds</code> class in the <a href="week1examples.zip">week 1 examples package</a> as an example, write a class called <code>GCD</code> that prompts the user for two integers and then computes and prints their greatest common divisor (GCD).
+<p>
+Here is a Python version of a program to do that:
+<pre>
+def gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a%b)
+
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+print("The gcd is", gcd(a,b))
+</pre>
+Note that the main part of the Python program is the last three lines and that, in Java, the main code goes into the <code>main</code> method, as in <code>LotteryOdds</code>.
+</p>
+<h2>Submission instructions</h2>
+<p>
+When done correctly, you will have a single program <code>GCD.java</code> in a package called <code>gcd</code>.  This is located in your file system under the workspace folder you created for Eclipse.  Starting at that folder, navigate to <code>algs4/src/gcd</code>.  Zip that folder (that is, zip the folder <code>gcd</code> NOT just the file <code>GCD.java</code>) into a zip file called <code>gcd.zip</code> and submit that zip file into the D2L dropbox for this assignment no later than its due date.
+</p>
+<p>
+Four very important points to remember:
+<ol>
+<li>
+Your name must appear in a comment at the top of the program.  You can insert it either in this style:
+<pre>
+// Author: Alan Turing
+</pre>
+or this style:
+<pre>
+/*
+ * Author: Alan Turing
+ */
+</pre>
+<li>
+Give the files the names EXACTLY as specified, including the capitalization.  Not doing so will cause points to be deducted.
+</li>
+<li>
+A submission may be graded as soon as it appears in its drop box.  In other words, don't submit until you're sure that you want the program graded.
+</li>
+<li>
+Just after the due date, zero points will automatically be given any assignment not submitted.
+</li>
+</ol>
+</p>
+<p><em>Last update: March 28th, 2017</em></p>
+</body>
+</html>

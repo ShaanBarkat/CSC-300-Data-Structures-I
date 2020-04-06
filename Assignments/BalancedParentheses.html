@@ -1,0 +1,86 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  body {font-family: Calibri, Georgia; font-size: 11pt; }
+  h1, h2, h3 {font-family: Cambria, Arial, Helvetica; font-weight: lighter; }
+  h1 {font-size: 26pt; }
+  h2 {font-size: 14pt; }
+  h3 {font-size: 12pt; }
+  h1 {color: #88b04b}
+  h2, h3 {color: #BA4653}
+  code {font-family: Courier New; font-weight: bold; color:  darkblue }
+  table {border-radius: 5px; border: 2px solid black; }
+  td, th {border: 1px solid gray; }
+  ul.innerlist {list-style: none; margin: 0; padding: 0}
+  </style>
+</head>
+
+<body>
+<div id="content">
+<h1>CSC 300/Data Structures in Java I<br />Assignment: Check balanced parentheses</h1>
+<h2>10 points</h2>
+<hr />
+<h2>Setting up</h2>
+<p>
+First, please read the section "Assignments and grading" in the <a href="Syllabus.html">syllabus</a>.  Then, following the steps for <a href="Creating programs.html">creating programs</a>, create a package called <code>balancedParentheses</code>.
+</p>
+<h2>Specifications</h2>
+<p>
+<p>
+Write a program that prompts the user for a string.  Using the pseudocode algorithm below, determine and print whether the parentheses in that string are balanced.
+<pre>
+Prompt the user for a string
+Create an empty stack for characters
+For each character in the string
+  if the character is '('
+    push it onto the stack
+  else if the character is ')'
+    if the stack is not empty
+      pop a character from the stack
+    else
+      print a message that an unbalanced right parenthesis was found and where it was found
+      exit the program
+    end
+  end // We ignore characters that are not parentheses.
+end
+If the stack is not empty
+  print a message that unbalanced left parentheses were found
+else
+  print a message that the parentheses are balanced
+end
+</pre>
+To exit a Java program, use the statement <code>System.exit(0);</code>
+</p>
+<h2>Submission instructions</h2>
+<p>
+When done correctly, you will have a single program <code>BalancedParentheses.java</code> in a package called <code>balancedParentheses</code>.  This is located in your file system under the workspace folder you created for Eclipse.  Starting at that folder, navigate to <code>algs4/src/balancedParentheses</code>.  Zip that folder (that is, zip the folder <code>balancedParentheses</code> NOT just the file <code>BalancedParentheses.java</code>) into a zip file called <code>balancedParentheses.zip</code> and submit that zip file into the D2L dropbox for this assignment no later than its due date.
+</p>
+<p>
+Four very important points to remember:
+<ol>
+<li>
+Your name must appear in a comment at the top of the program.  You can insert it either in this style:
+<pre>
+// Author: Alan Turing
+</pre>
+or this style:
+<pre>
+/*
+ * Author: Alan Turing
+ */
+</pre>
+<li>
+Give the files the names EXACTLY as specified, including the capitalization.  Not doing so will cause points to be deducted.
+</li>
+<li>
+A submission may be graded as soon as it appears in its drop box.  In other words, don't submit until you're sure that you want the program graded.
+</li>
+<li>
+Just after the due date, zero points will automatically be given any assignment not submitted.
+</li>
+</ol>
+</p>
+<p><em>Last update: April 17th, 2017</em></p>
+</body>
+</html>

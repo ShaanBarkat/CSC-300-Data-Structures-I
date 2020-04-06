@@ -1,0 +1,119 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  body {font-family: Calibri, Georgia; font-size: 11pt; }
+  h1, h2, h3 {font-family: Cambria, Arial, Helvetica; font-weight: lighter; }
+  h1 {font-size: 26pt; }
+  h2 {font-size: 14pt; }
+  h3 {font-size: 12pt; }
+  h1 {color: #88b04b}
+  h2, h3 {color: #BA4653}
+  code {font-family: Courier New; font-weight: bold; color:  darkblue }
+  table {border-radius: 5px; border: 2px solid black; }
+  td, th {border: 1px solid gray; }
+  ul.innerlist {list-style: none; margin: 0; padding: 0}
+  </style>
+</head>
+
+<body>
+<div id="content">
+<h1>CSC 300/Data Structures in Java I<br />Assignment: Search text in file</h1>
+<h2>15 points</h2>
+<hr />
+<h2>Setting up</h2>
+<p>
+First, please read the section "Assignments and grading" in the <a href="Syllabus.html">syllabus</a>.  Then, following the steps for <a href="Creating programs.html">creating programs</a>, create a package called <code>searchText</code>.
+</p>
+<h2>Specifications</h2>
+<p>
+<p>
+Write a program called <code>SearchText.java</code> that:
+<ol>
+<li>Prompts the user for a text file pathname.</li>
+<li>Prompts the user for a search string.</li>
+<li>Reads in all of the text in the file.</li>
+<li>Splits that text into an array of words.</li>
+<li>Prints a list of every word that contains the search string.</li>
+<li>After that list, prints a count of how many words contain that search string.</li>
+</ol>
+For example, running this program for the file <a href="constitution.txt"><code>constitution.txt</code></a> and using the search string <code>qu</code> produces the output:
+<pre>
+Tranquility
+requisite
+subsequent
+Consequence
+equally
+equally
+disqualification
+require
+question
+questioned
+question
+Marque
+square
+require
+Consequence
+Marque
+equal
+equal
+quorum
+equal
+require
+Equity
+Consequence
+equal
+required
+quartered
+required
+equity
+quorum
+quorum
+equal
+questioned
+qualifications
+requisite
+liquors
+qualify
+qualified
+qualified
+qualified
+liquors
+equal
+required
+Number of words containing "qu": 42
+</pre>
+As models, consult the programs from week 1 that count words.  You will have to look up the method in the String class that indicates whether one string contains another.
+</p>
+<h2>Submission instructions</h2>
+<p>
+When done correctly, you will have a single program <code>SearchText.java</code> in a package called <code>searchText</code>.  This is located in your file system under the workspace folder you created for Eclipse.  Starting at that folder, navigate to <code>algs4/src/searchText</code>.  Zip that folder (that is, zip the folder <code>searchText</code> NOT just the file <code>SearchText.java</code>) into a zip file called <code>searchText.zip</code> and submit that zip file into the D2L dropbox for this assignment no later than its due date.
+</p>
+<p>
+Four very important points to remember:
+<ol>
+<li>
+Your name must appear in a comment at the top of the program.  You can insert it either in this style:
+<pre>
+// Author: Alan Turing
+</pre>
+or this style:
+<pre>
+/*
+ * Author: Alan Turing
+ */
+</pre>
+<li>
+Give the files the names EXACTLY as specified, including the capitalization.  Not doing so will cause points to be deducted.
+</li>
+<li>
+A submission may be graded as soon as it appears in its drop box.  In other words, don't submit until you're sure that you want the program graded.
+</li>
+<li>
+Just after the due date, zero points will automatically be given any assignment not submitted.
+</li>
+</ol>
+</p>
+<p><em>Last update: April 7th, 2017</em></p>
+</body>
+</html>

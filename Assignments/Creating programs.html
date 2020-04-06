@@ -1,0 +1,81 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  body {font-family: Calibri, Georgia; font-size: 11pt; }
+  h1, h2, h3 {font-family: Cambria, Arial, Helvetica; font-weight: lighter; color: darkblue;}
+  h1 {font-size: 26pt; }
+  h2 {font-size: 14pt; }
+  h3 {font-size: 12pt; }
+  h1 {color: #88b04b}
+  h2, h3 {color: #BA4653}
+  .code {font-family: Courier New; font-weight: bold; }
+  table {border-radius: 5px; border: 2px solid black; }
+  td, th {border: 1px solid gray; }
+  ul.innerlist {list-style: none; margin: 0; padding: 0}
+  </style>
+</head>
+
+<body>
+<div id="content">
+<h1>CSC 300/Data Structures in Java I<br/>Creating programs</h1>
+<hr />
+<p>
+Each program presented in class or that you will write for an assignment will contain one or more Java files.  The files that are part of a program will be contained in a <em>Java package</em> with a name given as part of the assignment.  So to write a program you must first create a package in Eclipse.
+<ol>
+<li>Start up Eclipse.  In the Package Explorer pane you should see the <code>algs4</code> package.  If not, please see the instructions in <a href="Installing Eclipse.html">the Eclipse document</a>.</li>
+<li>If not already expanded, click on the arrow next to the <code>algs4</code> folder.</li>
+<li>Right click on the <code>src</code> folder and select <strong>New > Package</strong>.</li>
+<li>In the dialog box that appears type in the name of the package, which should begin with a lowercase letter.  For assignments, I will specify the name you should use.</li>
+</ol>
+</p>
+<p>
+For each file that will be part of a package, do the following:
+<ol>
+<li>Right click on the package icon and select <strong>New > Class</strong>.</li>
+<li>In the dialog box that appears type in the class name required by the assignment.  This will always be a name with an uppercase first letter.</li>
+<li>In the same dialog box, locate the heading
+<pre>
+Which method stubs would you like to create?
+</pre>
+Underneath it click the checkbox next to
+<pre>
+public static void main(String[] args)
+</pre>
+</li>
+<li>In the editing window you will see, for example, code like this appear:
+<pre>
+package Hello;
+
+public class Hello {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+    }
+
+}
+</pre>
+</li>
+<li>You are now ready to edit the code to do what you need. Now would be a good time to add the required comment at the top containing the name of the program's author.  For example:
+<pre>
+package Hello;
+/*
+ * Author: Alan Turing
+ */
+
+public class Hello {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+    }
+
+}
+</pre>
+</li>
+</ol>
+</p>
+<p><em>Last update: March 28th, 2017</em></p>
+</body>
+</html>

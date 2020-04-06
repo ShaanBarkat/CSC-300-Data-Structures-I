@@ -1,0 +1,76 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  body {font-family: Calibri, Georgia; font-size: 11pt; }
+  h1, h2, h3 {font-family: Cambria, Arial, Helvetica; font-weight: lighter; }
+  h1 {font-size: 26pt; }
+  h2 {font-size: 14pt; }
+  h3 {font-size: 12pt; }
+  h1 {color: #88b04b}
+  h2, h3 {color: #BA4653}
+  code {font-family: Courier New; font-weight: bold; color:  darkblue }
+  table {border-radius: 5px; border: 2px solid black; }
+  td, th {border: 1px solid gray; }
+  ul.innerlist {list-style: none; margin: 0; padding: 0}
+  </style>
+</head>
+
+<body>
+<div id="content">
+<h1>CSC 300/Data Structures in Java I<br />The Song class</h1>
+<h2>15 points</h2>
+<hr />
+<h2>Setting up</h2>
+<p>
+First, please read the section "Assignments and grading" in the <a href="Syllabus.html">syllabus</a>.  Then, following the steps for <a href="Creating programs.html">creating programs</a>, create a package called <code>song</code>.
+</p>
+<h2>Specifications</h2>
+<p>
+Write a reference class called <code>Song</code>.  It represents a simple song consisting of two sequences, one of durations and one of frequencies.  Here is its API:
+<ul>
+<li><code>public Song()</code>: this constructor creates a Song object with empty duration and frequency sequences.
+<li><code>public void addFrequency(double frequency)</code>: this method adds a frequency to the sequence of frequencies.
+<li><code>public void addDuration(double duration)</code>: this method adds a duration to the sequence of durations.
+<li><code>public void play()</code>: this plays the sequence of durations and frequencies.  It does this by indexing through both sequences, calling the <code>playTone</code> method on each individual duration and frequency.
+</ul>
+In addition to those public methods above, place in your class a private version of the <code>playTone</code> method from an earlier assignment.  Its first line will be:
+<pre>
+	private void playTone(double frequency, double duration) {
+</pre>
+</p>
+<p>
+Test your class by placing my <code><a href="PlaySong.java">PlaySong.java</a></code> program into your <code>song</code> package.  My program creates a <code>Song</code> object, reads a series of durations and frequencies from a file into it, and then calls the <code>play()</code> method.  You will also need to copy my <code><a href="march.txt">march.txt</a></code> file into your Eclipse <code>data</code> folder.
+</p>
+<h2>Submission instructions</h2>
+<p>
+When done correctly, you will end up with two Java files: Your  <code>Song.java</code> reference class and my <code>PlaySong.java</code> program.  Place them both in a package called <code>song</code>.  As always, zip the <code>song</code> folder in your Eclipse into the file <code>song.zip</code> and submit that zip file into the D2L dropbox for this assignment no later than its due date.
+</p>
+<p>
+Four very important points to remember:
+<ol>
+<li>
+Your name must appear in a comment at the top of the program.  You can insert it either in this style:
+<pre>
+// Author: Alan Turing
+</pre>
+or this style:
+<pre>
+/*
+ * Author: Alan Turing
+ */
+</pre>
+<li>
+Give the files the names EXACTLY as specified, including the capitalization.  Not doing so will cause points to be deducted.
+</li>
+<li>
+A submission may be graded as soon as it appears in its drop box.  In other words, don't submit until you're sure that you want the program graded.
+</li>
+<li>
+Just after the due date, zero points will automatically be given any assignment not submitted.
+</li>
+</ol>
+</p>
+<p><em>Last update: April 22nd, 2017</em></p>
+</body>
+</html>

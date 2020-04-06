@@ -1,0 +1,63 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  body {font-family: Calibri, Georgia; font-size: 11pt; }
+  h1, h2, h3 {font-family: Cambria, Arial, Helvetica; font-weight: lighter; }
+  h1 {font-size: 26pt; }
+  h2 {font-size: 14pt; }
+  h3 {font-size: 12pt; }
+  h1 {color: #88b04b}
+  h2, h3 {color: #BA4653}
+  code {font-family: Courier New; font-weight: bold; color:  darkblue }
+  table {border-radius: 5px; border: 2px solid black; }
+  td, th {border: 1px solid gray; }
+  ul.innerlist {list-style: none; margin: 0; padding: 0}
+  </style>
+</head>
+
+<body>
+<div id="content">
+<h1>CSC 300/Data Structures in Java I<br />Take-home Midterm</h1>
+<h2>50 points</h2>
+<hr />
+<h2>Instructions</h2>
+<p>
+Create a package called <code>midterm</code>.  Download and place into the class a program class I created called <code><a href="Midterm.java">Midterm</a></code>.  This contains only a main method.  You are to add your methods to that program class.  When you compile and run it, the main method will call each of the methods you are writing in response to the problems below.
+</p>
+<h2>Problem floorlog (8 points)</h2>
+<p>
+Write a static method called <code>floorlog</code> that takes a single int parameter <code>n</code>.  It should contain a while loop that keeps dividing <code>n</code> by 2 until its value is less than or equal to 1 and that also uses a counter to count how many iterations the loop takes.  It should then return that counter.
+</p>
+<h2>Problem squareRootList (8 points)</h2>
+<p>
+Write a static method called <code>squareRootList</code> that takes an array list of Double values.  It then replaces each value in that array list with its square root.  For example, if the array list contained the values 1.0, 2.0, 3.0, 4.0 before calling the method, after returning from the method it should contain the values 1.0, 1.4142135623730951, 1.7320508075688772, 2.0.
+</p>
+<h2>Problem falling (9 points)</h2>
+<p>
+Write a recursive public static method to calculate the falling power function.  It has the signature:
+<pre>
+public static long falling(long n, long e)
+</pre>
+As you can see, it takes two long parameters <code>n</code> and <code>e</code>.  Here is the mathematical definition:
+<ul>
+<li><i>n<sup><span style="text-decoration: underline;">e</span></sup></i> = <i>n</i> * (<i>n</i>-1)<sup><span style="text-decoration: underline;"><i>e</i>-1</span></sup></li>
+<li><i>n</i><sup><span style="text-decoration: underline;">0</span></sup> = 1</li>
+</ul>
+In the expressions above, the notation <i>n<sup><span style="text-decoration: underline;">e</span></sup></i> is read "<i>n</i> to the falling power <i>e</i>".
+</p>
+<h2>Problem sumBelowLimit (8 points)</h2>
+<p>
+Write a public static method <code>sumBelowLimit</code> that, given as parameters an array list of Doubles and a double value called a limit, returns the sum of the values in the list that are less than the limit.
+</p>
+<h2>Problem productOfEvens (8 points)</h2>
+<p>
+Write a public static method <code>productOfEvens</code> to compute the product of the even numbers in an array list of Integers given as a parameter.  By definition, the product of an empty list of numbers is 1.
+</p>
+<h2>Problem reverse (9 points)</h2>
+<p>
+Write a public static method <code>reverse</code> that takes as a parameter an array of strings and, using a stack, reverses the order of the strings in the array.
+</p>
+<p><em>Last update: May 2nd, 2017</em></p>
+</body>
+</html>
